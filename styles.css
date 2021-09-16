@@ -116,10 +116,8 @@
 
 svg {
     display: block;
-    font-size: 10.5em;
+    font-size: 170px;
     font-family: 'Inter', sans-serif;
-    width: 960px;
-    height: 300px;
     margin: 0 auto;
 }
 
