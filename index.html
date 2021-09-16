@@ -1,19 +1,55 @@
 <!DOCTYPE html>
 <head>
+  <title> Hybrid | 20785A </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A robotics team of hastily assembled year 10s.">
   <link rel="stylesheet" href="./styles.css">
   <link rel="icon" href="./logo.svg">
 </head>
 <body>
   <header class="header">
-  <a href="" class="logo"><img src="./logo.svg" height=50px alt=""></a>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <ul class="menu">
-    <li><a href="#work">Our Work</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#careers">Careers</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+        <nav class="navbar">
+            <a href="#" class="nav-logo"><img src="./logo.svg" height=50px alt=""></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
 </header>
+<script type="text/javascript">
+  const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+</script>
 </body>
