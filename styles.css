@@ -128,6 +128,7 @@ svg {
     stroke-width: 5px;
     stroke-dashoffset: 0%;
     animation: stroke-offset 5.5s infinite linear;
+      text-shadow:1px 1px 10px #541490, 1px 1px 10px #892be2;
 }
 
 .text-copy:nth-child(1){
